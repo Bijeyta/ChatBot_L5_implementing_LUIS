@@ -16,9 +16,9 @@ adapter.onTurnError = async(context, error) => {
 }
 
 const luisConfig = {
-    applicationId: 'your appId',
-    endpointKey: 'primary key or secondary key',
-    endpoint: 'end point url'
+    applicationId: '4f6e35de-6907-4dd6-9654-ebc5cc585a5c',
+    endpointKey: '3bc001683bab47088bd4915e01856053',
+    endpoint: 'https://trainingchatbotluis-authoring.cognitiveservices.azure.com/'
 }
 
 const luisRecognizer = new LeaveRecognizer(luisConfig);

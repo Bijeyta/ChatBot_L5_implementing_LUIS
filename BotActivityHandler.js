@@ -6,7 +6,7 @@ class BotActivivtyHandler extends ActivityHandler {
         if(!conversationState) throw new Error ('ConversationState are required');
         this.conversationState = conversationState;
         this.rootDialog = rootDialog;
-        this.accessor = this.conversationState.createProperty('DialogAccessor')
+        this.accessor = this.conversationState.createProperty('DialogAccessor');
 
         this.onMessage(async (context, next) => {
             await this.rootDialog.run(context, this.accessor)
